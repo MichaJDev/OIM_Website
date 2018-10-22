@@ -1,33 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl" xml:lang="en">
 	<head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <meta content="UTF-8" http-equiv="encoding" />
+        <meta http-equiv="Content-Language" content="en" />
 		<title>Micha J Portfolio</title>
 		<link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $(".content").load("pages\\home.html");
+                    $("#logo").click(function(){
+                        $(".content").load("pages\\home.html");
+                    });
+                    $("#home").click(function(){
+                        $(".content").load("pages\\home.html");
+                    });
+                    $("#about").click(function(){
+                        $(".content").load("pages\\about.html");
+                    });
+                    $("#work").click(function(){
+                        $(".content").load("pages\\work.html");
+                    });
+                    $("#contact").click(function(){
+                        $(".content").load("pages\\contact.html");
+                    });
+                
+                    $("#OIMW1").click(function(){
+                        $(".content").load("pages\\work\\w1.html");
+                    });
+                    $("#OIMW2").click(function(){
+                        $(".content").load("pages\\work\\w2.html");
+                                });
+                    $("#OIMW3").click(function(){
+                        $(".content").load("pages\\work\\w3.html");
+                                });
+                    $("#OIMW4").click(function(){
+                        $(".content").load("pages\\work\\w4.html");
+                    });
+                    $("#OIMW5").click(function(){
+                        $(".content").load("pages\\work\\w5.html");
+                    });
+                    $("#OIMW6").click(function(){
+                        $(".content").load("pages\\work\\w6.html");
+                    });  
+            });
+                
+        </script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
 				<div id="header_top">
 					<div class="logo">
-						<img src="images\logo.png"/>
-					</div>
+						<img id="logo" src="images\logo.png"/>
+                        <h1>Micha Janssen</h1>
+                        <h3>OIM Portfolio</h3>
+                    </div>
 					<div class="nav">
 						<ul>
-							<li><a href="">Home</a></li>
-							<li><a>About</a></li>
-							<li><a>Work</a></li>
-							<li><a>Contact</a></li>
+							<li id="home">Home</li>
+							<li id="about" >About</li>
+							<li id="work" >Work</li>
+							<li id="contact">Contact</li>
 						</ul>
-					</nav>
-				</div>
-				<div id="header_bottum">
-					<div class="welcome">
-						
-					</div>
-				</div>
+                    </div>
+                </div>
 			</header>
 			<div class="content">
-				<div class=""></div>
 			</div>
 		</div>
 	</body>
